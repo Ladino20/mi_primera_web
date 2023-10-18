@@ -1,0 +1,337 @@
+body {background-color: rgb(196, 182, 182);}
+
+div{
+    display: block;
+}
+
+img    {
+    width: 500px;
+    height: 600px;
+    border-radius: 1cm;
+}
+
+section{
+    display: block;
+}
+
+.seccion-1{
+    background-color: #fffefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2cm;
+}
+
+.seccion-2{
+    background-color: rgb(221, 221, 199);
+    display: grid;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol,
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(202, 244, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i {
+    background-color: rgb(202, 234, 255);
+    font-size: 3cm;
+    padding: 0.5cm;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+}
+
+header nav ul li a{
+    color: aliceblue;
+}
+
+footer{
+    background-color: #888181; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-align: center;     
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+
+/* Estilos para el contenido dentro del footer */
+.footer-content {
+    max-width: 100%; /* Ajusta en ancho según tus necesidades */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.seccion-3{
+display: flex;
+margin: 20px;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.caja{
+width: 45%;
+height: 250px;
+text-align: center;
+}
+
+.descripcion{
+display: flex;
+justify-content: space-around;
+text-align: left;
+font-family: sans-serif;
+}
+
+.img-caja{
+    width: 35%;
+    height: 150px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.seccion-4{
+    background-color: #f6defc;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+
+    /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"]
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+
+    .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+      
+      
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+      
+      
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px;
+        resize: none;
+      
+      
+        width: 100%;
+      }
+
+      .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+  }
+}
+
+  
+
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .portada{
+        width: 200px;
+        height: auto;
+    }
+    .segunda{
+        width: 100%;
+        height: auto;
+    }
+    .checkbtn{
+        display:block;
+    }
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0578eb;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: #2c3e50;
+    } 
+
+    .web{
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    }
+
+    .web ul.menu{
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+
+    .web ul.menu li a{
+        color: #b59a61;
+    }
+
+    .caja{
+        display: block;
+        width: 80%;
+    }
+
+    .form-header {
+        padding: 50px;
+      }
+    
+      .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      } 
+      .form-row input[type="text"]
+      .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+          width: 250px;
+        }
+        
+      .form-row button {
+          margin-left: 120px;
+    }
+    }
+        /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+
+
